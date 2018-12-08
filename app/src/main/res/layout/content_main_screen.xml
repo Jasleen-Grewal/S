@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainScreen"
+    tools:showIn="@layout/app_bar_main_screen">
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/toronto"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:background="#5f0085"
+        android:fontFamily="sans-serif"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:text="@string/toronto"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/etobicoke"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:layout_below="@+id/toronto"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-3dp"
+        android:text="@string/etobicoke"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="36sp"
+        tools:background="#008577" />
+
+    <TextView
+        android:id="@+id/brampton"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/etobicoke"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginBottom="150dp"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:background="#e53935"
+        android:fontFamily="sans-serif"
+        android:text="@string/brampton"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/lakeshore"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginBottom="29dp"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorWhite"
+        android:textSize="36sp"
+        tools:background="#646423"
+        android:text="@string/lakeshore" />
+
+
+</RelativeLayout>
